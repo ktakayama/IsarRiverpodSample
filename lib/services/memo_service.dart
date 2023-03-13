@@ -23,17 +23,20 @@ class MemoService {
     await for (final results in query.watch(fireImmediately: true)) {
       if (results.isNotEmpty) {
         yield results;
+      } else {
+        yield [];
       }
     }
   }
 
-  addMemo() async {
+  Future<Memo> addMemo() async {
     final randomString = Random().nextInt(10000).toString();
     final title = 'title$randomString';
     final memo = Memo(title: title, body: 'body', updated: DateTime.now());
     await isar.writeTxn(() async {
       await isar.memos.put(memo);
     });
+    return memo;
   }
 
   removeMemo(int id) async {
