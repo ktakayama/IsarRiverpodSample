@@ -1,16 +1,8 @@
 # isar_riverpod_sample
 
-A new Flutter project.
+This repository is a sample project of code that combines [Isar](https://isar.dev/) and [Riverpod](https://riverpod.dev/).
 
-## Getting Started
+The Japanese explanation article is below.
 
-This project is a starting point for a Flutter application.
+https://zenn.dev/ktakayama/articles/46cd85c1072898
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
